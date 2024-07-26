@@ -5,6 +5,7 @@ import { HiInformationCircle } from "react-icons/hi";
 import { useDispatch, useSelector } from 'react-redux';
 import { signInFailure, signInStart, signInSuccess } from '../Redux/Slice/userSlice';
 import OAuth from '../Components/OAuth';
+import GithubOath from '../Components/GithubOath';
 
 
 const SignIn = () => {
@@ -79,6 +80,7 @@ const SignIn = () => {
             </Button>
             
             <OAuth/>
+            <GithubOath/>
           </form>
 
           <div className='text-sm mt-6'>

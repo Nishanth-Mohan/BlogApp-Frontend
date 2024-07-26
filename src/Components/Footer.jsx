@@ -4,7 +4,7 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsTwitter } 
 
 const FooterCom = () => {
   return (
-    <Footer container className='border-t-2'>
+    <Footer container className='border border-t-8 dark:bg-black'>
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
@@ -15,7 +15,7 @@ const FooterCom = () => {
               name="Blogger Hunt!"
             />
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+          <div className="grid grid-cols-2 gap-8 sm:mt-1 sm:grid-cols-3 sm:gap-6">
             <div>
               <Footer.Title title="about" />
               <Footer.LinkGroup col>

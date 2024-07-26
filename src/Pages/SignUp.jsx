@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { HiInformationCircle } from "react-icons/hi";
 import OAuth from '../Components/OAuth';
+import GithubOath from '../Components/GithubOath';
 
 const SignUp = () => {
   // const [username,setUsername] = useState('')
@@ -84,6 +85,7 @@ const SignUp = () => {
             </Button>
              
             <OAuth/>
+            <GithubOath/>
           </form>
           <div className='text-sm mt-6'>
             <span>Already Have An Account?</span> <Link to='/signin' className='text-green-700 font-semibold'>Sign In</Link>
