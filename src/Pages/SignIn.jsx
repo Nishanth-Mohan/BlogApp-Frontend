@@ -42,8 +42,9 @@ const SignIn = () => {
       }
 
       if(response.ok){
+        localStorage.setItem('Token',data.token)     // This line is to set the Token coming from backend
         dispatch(signInSuccess(data))
-        navigate('/')     
+        navigate('/home')     
       }
      
     } catch (error) {
